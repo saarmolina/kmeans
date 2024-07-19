@@ -9,6 +9,25 @@ This project implements the K-means clustering algorithm in both C and Python. T
 - Customizable number of clusters (K) and maximum iterations
 - Convergence detection using Euclidean distance
 
+## Input Format
+
+The input data should be provided in a text file where each line represents a vector, with coordinates separated by commas. For example:
+
+```bash
+1.0,2.0,3.0
+4.0,5.0,6.0
+7.0,8.0,9.0
+```
+
+## Output
+
+The program prints the final centroids to the standard output, with each centroid on a new line and coordinates separated by commas. For example:
+
+```bash
+1.0000,2.0000,3.0000
+4.0000,5.0000,6.0000
+```
+
 ## C Implementation
 
 ### Compilation
@@ -61,25 +80,6 @@ python kmeans.py K [iter] input_file.txt
 - `assignToClusters`: Assigns vectors to the nearest centroid
 - `updateCentroids`: Updates centroids based on current clusters
 - `kmeans`: Main function implementing the K-means algorithm
-
-## Input Format
-
-The input data should be provided in a text file where each line represents a vector, with coordinates separated by commas. For example:
-
-```bash
-1.0,2.0,3.0
-4.0,5.0,6.0
-7.0,8.0,9.0
-```
-
-## Output
-
-The program prints the final centroids to the standard output, with each centroid on a new line and coordinates separated by commas. For example:
-
-```bash
-1.0000,2.0000,3.0000
-4.0000,5.0000,6.0000
-```
 
 ## Error Handling
 
